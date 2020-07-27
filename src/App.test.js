@@ -1,9 +1,42 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+const { generateText, addTag } = require("./util");
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+// test("Test Name Generator", () => {
+//   const generateTextTest = generateText();
+//   expect(generateTextTest).toBe(true);
+// });
+
+test("Adding unique tag to tags shorter than 5", () => {
+  const tag = "10";
+  const tags = ["1", "2"];
+
+  const combinedTags = addTag(tag, tags);
+
+  expect(combinedTags).toBe(true);
+});
+
+test("Adding nonUnique tag to tags shorter than 5", () => {
+  const tag = "1";
+  const tags = ["1", "2", "3", "4", "5"];
+
+  const combinedTags = addTag(tag, tags);
+
+  expect(combinedTags).toBe(false);
+});
+
+test("Adding unique tag to tags longer than 5", () => {
+  const tag = "10";
+  const tags = ["1", "2", "3", "4", "5"];
+
+  const combinedTags = addTag(tag, tags);
+
+  expect(combinedTags).toBe(false);
+});
+
+test("Adding nonUnique tag to tags longer than 5", () => {
+  const tag = "1";
+  const tags = ["1", "2", "3", "4", "5"];
+
+  const combinedTags = addTag(tag, tags);
+
+  expect(combinedTags).toBe(false);
 });

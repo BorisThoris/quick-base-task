@@ -1,0 +1,100 @@
+.formWrapper {
+  background-color: yellow;
+  min-width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+
+  border: solid #737373 0.2vh;
+}
+
+.formTitle {
+  height: 5vw;
+  background-color: #aaaaaa;
+
+  color: #4d4d4d;
+  font-size: 3vw;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: solid #737373 0.2vh;
+}
+
+.formFooter {
+  background-color: rgba(173, 173, 173, 0.123);
+}
+
+.formFooterText {
+  /* background-color: red; */
+  width: 80%;
+
+  color: rgba(0, 0, 0, 0.37);
+  font-size: 1.5vw;
+  font-weight: bold;
+
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.inputAndSelectSizer {
+  flex: 0.7;
+  overflow: hidden;
+
+  font-size: 2.5vh;
+
+  padding: 0px;
+
+  border: solid #737373 0.2vh;
+}
+
+.formBody {
+  flex: 1;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background-color: #ffffff;
+}
+
+.formRow,
+.formRowSelect,
+.formRowButtons {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 1.2vh;
+  margin-bottom: 1.8vh;
+  margin-right: 10%;
+  margin-left: 1%;
+}
+.formRowButtons {
+  margin-right: 8%;
+  margin-top: 8vh;
+}
+
+.formRowSelect {
+  margin-top: 1.5vh;
+  margin-bottom: 3%;
+}
+
+.formRowLabel {
+  overflow-wrap: break-word;
+  overflow: hidden;
+  flex: 0.3;
+
+  font-size: 3.5vh;
+  color: #4d4d4d;
+
+  text-align: start;
+}
+
+.buttonsContainer {
+  flex: 0.7;
+  display: flex;
+
+  justify-content: space-between;
+}

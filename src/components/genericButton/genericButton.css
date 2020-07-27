@@ -1,0 +1,12 @@
+.genericButton {
+  background-color: white;
+
+  font-size: 2vw;
+  font-weight: normal;
+
+  border: solid #737373 0.2vh;
+}
+
+.genericButton.grayButton {
+  color: #737373;
+}
